@@ -1,0 +1,20 @@
+{
+  "name": "test-task---store-colors",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Talex210/test-task---store-colors.git"
+  },
+  "keywords": [],
+  "author": "Talex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Talex210/test-task---store-colors/issues"
+  },
+  "homepage": "https://github.com/Talex210/test-task---store-colors#readme",
+  "description": "test-task---store-colors"
+}
