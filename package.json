@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "pug": "pug ./src/pug/pages -o ./dist -P -w",
+    "sass": "sass --watch ./src/scss:./dist/css",
+    "server": "live-server ./dist",
+    "start": "concurrently \"npm run pug\" \"npm run sass\" \"npm run server\""
   },
   "repository": {
     "type": "git",
@@ -16,5 +19,15 @@
     "url": "https://github.com/Talex210/test-task---store-colors/issues"
   },
   "homepage": "https://github.com/Talex210/test-task---store-colors#readme",
-  "description": "test-task---store-colors"
+  "description": "test-task---store-colors",
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "live-server": "^1.2.2",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.89.2"
+  },
+  "dependencies": {
+    "axios": "^1.10.0",
+    "swiper": "^11.2.10"
+  }
 }
