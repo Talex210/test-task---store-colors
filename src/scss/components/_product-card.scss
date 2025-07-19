@@ -1,0 +1,48 @@
+// src/scss/components/_product-card.scss
+.product-card {
+  display: flex;
+  flex-direction: column;
+
+  &__image-container {
+    margin-bottom: 16px;
+  }
+
+  &__image {
+    width: 100%;
+    // Это свойство сохранит пропорции картинки
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    display: block;
+  }
+
+  &__info {
+    margin-bottom: 16px;
+  }
+
+  &__name {
+    font-size: 18px;
+    font-weight: normal;
+    margin-bottom: 8px;
+  }
+
+  &__price {
+    font-size: 16px;
+    color: $color-gray;
+  }
+
+  &__add-btn {
+    // Стили для кнопки "Добавить в корзину"
+    cursor: pointer;
+    padding: 12px 24px;
+    border: 1px solid $color-accent;
+    color: $color-accent;
+    background-color: transparent;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hover {
+      background-color: $color-accent;
+      color: $color-dark-green;
+    }
+  }
+}

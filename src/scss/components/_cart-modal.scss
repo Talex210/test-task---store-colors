@@ -1,0 +1,37 @@
+.cart-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end; // Прижимаем окно к правому краю
+  z-index: 1000;
+
+  // Модификатор, который скрывает окно
+  &--hidden {
+    display: none;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 400px; // Ширина окна корзины
+    background-color: $color-light-green;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  // Стили для заголовка, кнопки закрытия и т.д.
+}

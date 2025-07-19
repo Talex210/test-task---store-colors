@@ -1,0 +1,11 @@
+// 1. Базовые файлы
+@import 'base/variables';
+@import 'base/base';
+
+// 2. Компоненты
+@import 'components/product-card';
+@import 'components/cart-modal';
+
+// Сюда ты будешь добавлять импорты для новых компонентов
+// @import 'components/header';
+// @import 'components/promo';
